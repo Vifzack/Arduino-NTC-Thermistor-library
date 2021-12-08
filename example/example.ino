@@ -1,4 +1,4 @@
-#include <Arduino.h>
+
 #include "NTCTemperature.h"               //include the library
 
 
@@ -14,7 +14,7 @@ void loop()
   float TempC = myNTC.getTemperatureC();    //get temperaturereading in °C
   float TempF = myNTC.getTemperatureF();    //get temperaturereading in °F
 
-  Serial.print("°C: ");                     //print temperatur on serial monitor
+  Serial.print("°C: ");                     //print temperature on serial monitor
   Serial.println(TempC);
   Serial.print("°F: ");
   Serial.println(TempF);

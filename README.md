@@ -1,6 +1,6 @@
 # NTC-temperatur-library
 
-This simple library is made for easy use of an NTC Resistor as a temperature sensor.
+This simple library is made for an easy use of an NTC Resistor as a temperature sensor.
 
 Can be used with Arduino, ESP and co and is written in C++
 

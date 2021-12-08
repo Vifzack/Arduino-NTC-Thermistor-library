@@ -1,0 +1,34 @@
+KEYWORDS FOR NTCTemperature LIBRARY:
+###################################################################################################################################################################
+
+INITIALISATION:
+
+NTC myNTC(analog input from uC (A0), resistor value from voltagedivider (10000), resistor value of NTC at 25 °C from datasheet (4700), B25 value from datasheet (3505));
+
+Notes:
+All values, despite pin number, are float values!
+B25 value might need some testing, to get the best results. Take a look at a datasheet of your NTC to find a good startvalue.
+
+
+###################################################################################################################################################################
+
+GET TEMPERATURE VALUES:
+
+myNTC.getTemperatureC();        returns the temperature in degree Celsius
+myNTC.getTemperatureF();        returns the temperature in degree Fahrenheit
+
+
+###################################################################################################################################################################
+
+CIRCUIT:
+
+    +5V DC
+       |
+       |                            / NTC
+       ---------[ R ]-------|---[  /  ]---------            recommended values: 
+                            |   __/            |                                    R=10k
+                            |                  |                                    NTC=4.7k@25°C
+                            |                 ---                                   V=+5VDC
+                            |                 GND                                   Arduino Pin = A0
+                            |
+                        Arduino Pin

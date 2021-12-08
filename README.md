@@ -6,6 +6,7 @@ Can be used with Arduino, ESP and co and is written in C++
 
 Just take look at KEYWORD.txt for more informations on code and circuit.
 
-![](image/README/1638985552563.png)
 
-![](image/README/1638986020730.png)
+## Schematic:
+
+![image](https://user-images.githubusercontent.com/61111586/145259225-563ad0d8-308a-4d89-a64f-2f65b0e055a6.png)

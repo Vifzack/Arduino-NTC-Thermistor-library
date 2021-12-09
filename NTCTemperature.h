@@ -5,10 +5,10 @@
 #include "Arduino.h"
 #include <math.h>
 
-class NTC
+class NTC                                                                               //define a class named NTC
 {
-private:
-    float Pin;
+private:                                                                                //private section of the class
+    float Pin;                                                                          //variables for calculation are declared here
     float Resistor1;
     float ResistorNTC;
     float beta;
@@ -20,11 +20,11 @@ private:
     float DVolatge;
     float NTCvalue;
 
-public:
-    NTC(int NTCPin, float Resistor, float NTCResistor, float b); // Constuctor
-
-    float getTemperatureC(); // Toggle Functions
+public:                                                                                 //public section oft the class
+    NTC(int NTCPin, float Resistor, float NTCResistor, float b);                        //here are all the functions from this library defined
+                                                                                        
+    float getTemperatureC(); 
     float getTemperatureF();
 };
 
-#endif //! NTCTemperature
+#endif 

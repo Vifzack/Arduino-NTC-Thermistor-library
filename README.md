@@ -1,4 +1,4 @@
-# NTC-temperatur-library
+# Arduino NTC-Thermistor-library
 
 This simple library is made for an easy use of an NTC Resistor as a temperature sensor.
 
